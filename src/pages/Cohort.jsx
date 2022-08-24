@@ -1,16 +1,18 @@
 import React from "react";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 function Cohort() {
+  /* same thing */
+  const params = useParams();
+  const { fishFingers } = useParams();
 
-    const params = useParams();
+  return (
+    <>
+      {/* same thing */}
+      <h1>{params.fishFingers}</h1>
+      <h2>{fishFingers}</h2>
+    </>
+  );
+}
 
-    return (
-        <h1>  
-            {params.fishFingers}
-        </h1>
-    );
-  }
-  
-  export default Cohort;
-
+export default Cohort;
