@@ -1,4 +1,3 @@
-/* only 'Route' can go inside <Routes></Routes> */
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -25,7 +24,7 @@ function App() {
         <Route path="about" element={<About />}></Route>
 
         <Route index element={<Home />}></Route>
-        
+
       </Route>
 
       <Route path="*" element={<h1>Not Found!</h1>}></Route>
